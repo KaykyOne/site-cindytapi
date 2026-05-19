@@ -1,0 +1,29 @@
+.dep-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.dep-card {
+  border: 1px solid var(--border-gold);
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(0,0,0,0.2);
+}
+
+.dep-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  color: var(--gold-muted);
+  line-height: 0.8;
+  margin-bottom: 1rem;
+}
+
+.dep-text {
+  color: var(--text-light);
+}
+
+.dep-autor {
+  color: var(--gold);
+  margin-top: 1rem;
+}

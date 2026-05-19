@@ -1,0 +1,17 @@
+footer {
+  background: #0B0A08;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-gold);
+}
+
+.footer-logo img {
+  height: 40px;
+  opacity: 0.7;
+}
+
+.footer-copy {
+  color: var(--text-muted);
+}

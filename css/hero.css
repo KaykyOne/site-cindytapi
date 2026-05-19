@@ -1,0 +1,100 @@
+#inicio {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 6rem;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../imgs/REI_9951_\(2\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* mantém foco mais pra cima */
+  background-position: center 30%;
+
+  filter: brightness(0.28) saturate(0.65);
+  transform: scale(1.02);
+  animation: slowZoom 22s ease-out forwards;
+}
+
+@keyframes slowZoom {
+  0% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  height: 130%;
+  background: linear-gradient(to top, rgba(15,13,11,0.95) 0%, rgba(15,13,11,0.4) 60%, transparent 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding-left: 4rem;
+  max-width: 720px;
+  animation: fadeUp 1s ease-out;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-logo-img {
+  height: 110px;
+  width: auto;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+}
+
+.hero-slogan {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.2rem, 2.2vw, 1.7rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-light);
+  margin-bottom: 2.2rem;
+}
+
+.hero-slogan em { color: var(--gold); }
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--dark);
+  padding: 0.85rem 2.2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.25s;
+  display: inline-block;
+}
+
+.btn-primary:hover { background: #c49a62; transform: translateY(-2px); }
+
+.btn-outline {
+  border: 1px solid rgba(214,177,126,0.5);
+  color: var(--cream);
+  padding: 0.85rem 2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); background: rgba(214,177,126,0.05); }
