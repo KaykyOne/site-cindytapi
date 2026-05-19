@@ -9,3 +9,54 @@
   .listen-link { align-self: flex-start; }
   footer { flex-direction: column; gap: 1rem; text-align: center; }
 }
+
+@media (max-width: 700px) {
+  section { padding: 3.5rem 1.25rem; }
+  nav { padding: 0.9rem 1.25rem; }
+  nav.scrolled { padding: 0.6rem 1.25rem; }
+  .nav-logo img { height: 44px; }
+  #inicio { min-height: 620px; padding-bottom: 4rem; }
+  .hero-logo-img { height: 90px; margin-bottom: 1.2rem; }
+  .hero-content { max-width: 520px; }
+  .hero-buttons { gap: 0.75rem; }
+  .btn-primary,
+  .btn-outline { padding: 0.8rem 1.6rem; }
+  .servico-card { padding: 2.2rem 1.6rem; }
+  .dep-grid { gap: 1.5rem; }
+  .sobre-deco { top: 0; left: 0; }
+}
+
+@media (max-width: 520px) {
+  section { padding: 3rem 1rem; }
+  nav { padding: 0.8rem 1rem; }
+  nav.scrolled { padding: 0.55rem 1rem; }
+  #inicio { min-height: 560px; padding-bottom: 3.2rem; }
+  .hero-content { padding-left: 0; }
+  .hero-logo-img { height: 78px; }
+  .hero-slogan { font-size: 1.1rem; margin-bottom: 1.6rem; }
+  .hero-buttons { flex-direction: column; align-items: flex-start; }
+  .btn-primary,
+  .btn-outline { width: 100%; text-align: center; }
+  .hit-row { gap: 1.2rem; }
+  .hit-cover { width: 68px; height: 68px; border-radius: 12px; }
+  .hit-title { font-size: 1.4rem; }
+  .hit-meta { flex-wrap: wrap; row-gap: 0.4rem; }
+  .hit-description { font-size: 0.8rem; }
+  .listen-link { width: 100%; text-align: center; }
+  .dep-card { padding: 1.6rem; }
+  .dep-quote { font-size: 2.4rem; }
+  .contact-description { margin-bottom: 2rem; }
+  .contact-actions { flex-direction: column; }
+  .social-row { gap: 0.6rem; }
+  .social-pill { width: 100%; text-align: center; }
+  footer { padding: 1.5rem 1rem; }
+}
+
+@media (max-width: 380px) {
+  .section-title { font-size: 1.9rem; }
+  .section-label { letter-spacing: 0.25em; }
+  .hero-slogan { font-size: 1rem; }
+  .nav-logo img { height: 40px; }
+  .servico-card { padding: 2rem 1.4rem; }
+  .hit-title { font-size: 1.25rem; }
+}
