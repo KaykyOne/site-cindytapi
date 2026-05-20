@@ -127,6 +127,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0;
+  background-color: rgba(0, 0, 0, 0.219);
+  backdrop-filter: blur(4px);
   border: 1.5px solid var(--gold);
   border-radius: 100px;
   overflow: hidden;
