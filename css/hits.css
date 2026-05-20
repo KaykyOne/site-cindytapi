@@ -1,111 +1,70 @@
-#hits {
-  background: var(--deep-brown);
-  position: relative;
-}
-
-.hits-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-  overflow: hidden;
-}
-
-.hit-row {
-  display: flex;
-  align-items: center;
+/* GRID DE LOUVORES */
+.hits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  background: rgba(15,13,11,0.6);
-  border: 1px solid var(--border-gold);
-  border-radius: 24px;
-  padding: 1.2rem 1.8rem;
-  transition: all 0.3s ease;
+  margin-top: 3rem;
 }
 
-.hit-row:hover {
-  border-color: var(--gold-muted);
-  transform: translateX(6px);
-  background: rgba(28,24,20,0.7);
-}
-
-.hit-cover {
-  width: 80px;
-  height: 80px;
+.hit-card {
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 16px;
-  background: #2a241e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  flex-shrink: 0;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(214, 177, 126, 0.15);
 }
 
-.hit-cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hit-cover-placeholder {
-  display: none;
-  color: var(--gold-muted);
-  text-align: center;
-  background: #1f1b17;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: monospace;
-  font-size: 0.7rem;
-  letter-spacing: 0.5px;
-}
-
-.hit-details {
-  flex: 1;
-}
-
-.hit-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: var(--cream);
-  line-height: 1.2;
-  margin-bottom: 0.25rem;
-}
-
-.hit-meta {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--gold-muted);
-  margin-bottom: 0.4rem;
-}
-
-.hit-description {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  max-width: 500px;
-}
-
-.listen-link {
-  background: transparent;
-  border: 1px solid var(--gold-muted);
-  padding: 0.5rem 1.2rem;
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  text-decoration: none;
-  border-radius: 60px;
-  transition: all 0.25s;
-  white-space: nowrap;
-}
-
-.listen-link:hover {
-  background: var(--gold);
-  color: var(--dark);
+.hit-card:hover {
+  transform: translateY(-5px);
   border-color: var(--gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hit-card iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 352px;
+}
+
+/* RESPONSIVIDADE - CELULAR em DUAS COLUNAS */
+@media (max-width: 768px) {
+  .hits-grid {
+    grid-template-columns: repeat(2, 1fr);  /* ← CORRETO: duas colunas */
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  
+  .hit-card {
+    padding: 0.5rem;
+  }
+  
+  .hit-card iframe {
+    min-height: 180px;
+    height: 180px;
+  }
+  
+  /* Telas muito pequenas (ex: iPhone SE) */
+  @media (max-width: 480px) {
+    .hits-grid {
+      gap: 0.6rem;
+    }
+    
+    .hit-card {
+      padding: 0.4rem;
+    }
+    
+    .hit-card iframe {
+      min-height: 150px;
+      height: 150px;
+    }
+  }
+}
+
+/* Para telas médias (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
 }
