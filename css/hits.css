@@ -23,48 +23,30 @@
 .hit-card iframe {
   display: block;
   width: 100%;
-  height: auto;
-  min-height: 352px;
+
 }
 
-/* RESPONSIVIDADE - CELULAR em DUAS COLUNAS */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .hits-grid {
-    grid-template-columns: repeat(2, 1fr);  /* ← CORRETO: duas colunas */
-    gap: 0.8rem;
-    margin-top: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
   }
   
   .hit-card {
-    padding: 0.5rem;
+    padding: 0.8rem;
   }
   
   .hit-card iframe {
-    min-height: 180px;
-    height: 180px;
-  }
-  
-  /* Telas muito pequenas (ex: iPhone SE) */
-  @media (max-width: 480px) {
-    .hits-grid {
-      gap: 0.6rem;
-    }
-    
-    .hit-card {
-      padding: 0.4rem;
-    }
-    
-    .hit-card iframe {
-      min-height: 150px;
-      height: 150px;
-    }
+    min-height: 280px;
   }
 }
 
 /* Para telas médias (tablets) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .hits-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
   }
 }
