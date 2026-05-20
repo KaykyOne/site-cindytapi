@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Cindy Tapia — Cantora, Palestrante & Adoradora | Site Oficial</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/hero.css">
@@ -14,192 +17,342 @@
   <link rel="stylesheet" href="css/servicos.css">
   <link rel="stylesheet" href="css/hits.css">
   <link rel="stylesheet" href="css/depoimentos.css">
+  <link rel="stylesheet" href="css/video.css">
   <link rel="stylesheet" href="css/contato.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
-<!-- Navegação -->
-<nav id="main-nav">
-  <a href="#inicio" class="nav-logo">
-  <img src="./Logo_Cindy-Tapi.png" alt="Cindy Tapia Logo">
-  </a>
-  <ul class="nav-links">
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#hits">Principais Hits</a></li>
-    <li><a href="#depoimentos">Depoimentos</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-  <a href="#contato" class="nav-cta">Agendar</a>
-</nav>
+  <!-- Navegação -->
+  <nav id="main-nav">
+    <a href="#inicio" class="nav-logo">
+      <img src="./Logo_Cindy-Tapi.png" alt="Cindy Tapia Logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#trajetoria">Trajetória</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="#contato" class="nav-cta">Agendar</a>
+  </nav>
 
-<!-- Hero -->
-<section id="inicio">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <p class="section-label">Site Oficial</p>
-    <img class="hero-logo-img" src="./Logo_Cindy-Tapi.png" alt="Cindy Tapia">
-    <p class="hero-slogan"><em>Transformo fé em coragem</em> para você viver com propósito</p>
-    <div class="hero-buttons">
-      <a href="#servicos" class="btn-primary">Conheça meu trabalho</a>
-      <a href="#sobre" class="btn-outline">Minha história</a>
+  <!-- Hero -->
+  <section id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-topline"></div>
+
+    <div class="hero-content">
+      <p class="hero-label">Site Oficial</p>
+
+      <img class="hero-logo-img" src="./Logo_Cindy-Tapi.png" alt="Cindy Tapia Logo">
+
+      <p class="hero-slogan">Bem-vindo(a) ao site <em>Cindy Tapia</em></p>
+
+      <!-- Botão streaming estilo Ana Nóbrega -->
+      <a href="#" class="hero-stream-btn">
+        <span class="stream-label">Ouça minhas músicas</span>
+        <span class="stream-arrow">→</span>
+        <span class="stream-icons">
+          <!-- YouTube Music -->
+          <span class="stream-icon" title="YouTube Music">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-13.332c-3.432 0-6.228 2.796-6.228 6.228S8.568 18.228 12 18.228s6.228-2.796 6.228-6.228S15.432 5.772 12 5.772zM9.684 15.54V8.46L15.816 12l-6.132 3.54z" />
+            </svg>
+          </span>
+          <!-- Deezer-style icon -->
+          <span class="stream-icon" title="Deezer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.81 11.843h2.877v1.937H18.81zm-4.893 0h2.877v1.937h-2.877zm-4.891 0h2.877v1.937H9.026zm-4.893 0H7.01v1.937H4.133zM13.917 9H16.794v1.937h-2.877zM9.026 9h2.877v1.937H9.026zM4.133 9H7.01v1.937H4.133zm9.784 5.683h2.877v1.937h-2.877zm-4.891 0h2.877v1.937H9.026zm-4.893 0H7.01v1.937H4.133z" />
+            </svg>
+          </span>
+          <!-- Spotify -->
+          <span class="stream-icon" title="Spotify">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+            </svg>
+          </span>
+        </span>
+      </a>
+      <div class="hover-ofer">
+        <div class="hover-ofer-inter">
+          <p>Em parceria com</p>
+          <h1>Todah Music</h1>
+        </div>
+        <img class="logoTodah" src="./imgs/logoTodah.jpg" />
+      </div>
     </div>
-  </div>
-</section>
 
-<!-- Sobre -->
-<section id="sobre" class="grid-2col">
-  <div class="sobre-img-wrap">
-    <img class="sobre-img" src="./imgs/REI_9781_(2).jpg" alt="Cindy Tapia retrato">
-    <div class="sobre-deco"></div>
-  </div>
-  <div class="sobre-text">
-    <p class="section-label">Quem sou</p>
-    <h2 class="section-title">Cantora, palestrante <em>& muito mais</em></h2>
+    <!-- Redes sociais inferior direito -->
+    <div class="hero-social">
+      <span class="hero-social-label">Redes Sociais</span>
+      <div class="hero-social-line"></div>
+      <div class="hero-social-icons">
+        <!-- Instagram -->
+        <a href="#" class="social-icon-btn" title="Instagram">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg>
+        </a>
+        <!-- Facebook -->
+        <a href="#" class="social-icon-btn" title="Facebook">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
+        <!-- YouTube -->
+        <a href="#" class="social-icon-btn" title="YouTube">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
+          </svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="#" class="social-icon-btn" title="WhatsApp">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="grid-2col">
+    <div class="sobre-img-wrap">
+      <img class="sobre-img" src="./imgs/REI_9781_(2).jpg" alt="Cindy Tapia retrato">
+      <div class="sobre-deco"></div>
+    </div>
+    <div class="sobre-text">
+      <p class="section-label">Quem sou</p>
+      <h2 class="section-title">Cantora, palestrante <em>& muito mais</em></h2>
+      <div class="divider-premium"></div>
+      <div class="sobre-tags">
+        <span class="sobre-tag">Cantora Gospel</span>
+        <span class="sobre-tag">Palestrante</span>
+        <span class="sobre-tag">Capelã FLMU Florida</span>
+        <span class="sobre-tag">Atriz</span>
+        <span class="sobre-tag">Empresária</span>
+      </div>
+      <p class="sobre-lead">"Sou uma mulher que une fé, família e propósito em cada área da minha vida."</p>
+      <p class="sobre-copy">Formada em Administração de Empresas e Ciências Contábeis, atuo como cantora gospel,
+        palestrante, Capelã da FLMU University Florida e atriz. Como empresária, aplico visão estratégica e inovação
+        para construir projetos sólidos e transformadores.</p>
+      <p>Minha trajetória mostra que é possível equilibrar diferentes papéis com autenticidade, fé e dedicação. Cada
+        projeto, palestra ou apresentação é uma oportunidade de conectar pessoas e deixar uma mensagem que ecoa além do
+        momento.</p>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <p class="section-label">O que faço</p>
+    <h2 class="section-title">Meus <em>Serviços</em></h2>
     <div class="divider-premium"></div>
-    <div class="sobre-tags">
-      <span class="sobre-tag">Cantora Gospel</span>
-      <span class="sobre-tag">Palestrante</span>
-      <span class="sobre-tag">Capelã FLMU Florida</span>
-      <span class="sobre-tag">Atriz</span>
-      <span class="sobre-tag">Empresária</span>
+    <div class="servicos-grid-premium">
+      <div class="servico-card">
+        <div class="servico-num">01</div>
+        <div class="servico-titulo">Adoradora & Cantora</div>
+        <p>Levo a mensagem da fé através da música gospel, transformando eventos em experiências de adoração</p>
+      </div>
+      <div class="servico-card">
+        <div class="servico-num">02</div>
+        <div class="servico-titulo">Palestrante</div>
+        <p>Compartilho minha história de vida e aprendizados em palestras motivacionais e espirituais.</p>
+      </div>
+      <div class="servico-card">
+        <div class="servico-num">03</div>
+        <div class="servico-titulo">Capelã FLMU</div>
+        <p>Apoio espiritual, oração e acolhimento, oferecendo orientação em momentos de necessidade.</p>
+      </div>
+      <div class="servico-card">
+        <div class="servico-num">04</div>
+        <div class="servico-titulo">Atriz</div>
+        <p>Arte como ferramenta de reflexão, transformação e fé, emocionando e conectando pessoas a Deus.</p>
+      </div>
     </div>
-    <p class="sobre-lead">"Sou uma mulher que une fé, família e propósito em cada área da minha vida."</p>
-    <p class="sobre-copy">Formada em Administração de Empresas e Ciências Contábeis, atuo como cantora gospel, palestrante, Capelã da FLMU University Florida e atriz. Como empresária, aplico visão estratégica e inovação para construir projetos sólidos e transformadores.</p>
-    <p>Minha trajetória mostra que é possível equilibrar diferentes papéis com autenticidade, fé e dedicação. Cada projeto, palestra ou apresentação é uma oportunidade de conectar pessoas e deixar uma mensagem que ecoa além do momento.</p>
-  </div>
-</section>
+  </section>
 
-<!-- Serviços -->
-<section id="servicos">
-  <p class="section-label">O que faço</p>
-  <h2 class="section-title">Meus <em>Serviços</em></h2>
-  <div class="divider-premium"></div>
-  <div class="servicos-grid-premium">
-    <div class="servico-card"><div class="servico-num">01</div><div class="servico-titulo">Adoradora & Cantora</div><p>Levo a mensagem da fé através da música gospel, transformando eventos em experiências de adoração</p></div>
-    <div class="servico-card"><div class="servico-num">02</div><div class="servico-titulo">Palestrante</div><p>Compartilho minha história de vida e aprendizados em palestras motivacionais e espirituais.</p></div>
-    <div class="servico-card"><div class="servico-num">03</div><div class="servico-titulo">Capelã FLMU</div><p>Apoio espiritual, oração e acolhimento, oferecendo orientação em momentos de necessidade.</p></div>
-    <div class="servico-card"><div class="servico-num">04</div><div class="servico-titulo">Atriz</div><p>Arte como ferramenta de reflexão, transformação e fé, emocionando e conectando pessoas a Deus.</p></div>
-  </div>
-</section>
-
-<!-- Principais hits -->
-<section id="hits">
-  <p class="section-label">Música & Mensagem</p>
-  <h2 class="section-title">Principais <em>Hits</em></h2>
-  <div class="divider-premium"></div>
-  <div class="hits-container">
-    <!-- Hit 1 -->
-    <div class="hit-row">
-      <div class="hit-cover">
-        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/06/debora-amorim-cantora-e1749139814920.jpg?w=1080&h=608&crop=1" alt="Capa Toma o Teu Lugar" onerror="this.style.display='none'; this.nextSibling.style.display='flex';">
-        <div class="hit-cover-placeholder">CAPA</div>
+  <!-- Louvores que marcaram a minha trajetoria -->
+  <section id="trajetoria">
+    <p class="section-label">Música & Mensagem</p>
+    <h2 class="section-title">Louvores que marcaram a minha <em>trajetória</em></h2>
+    <div class="divider-premium"></div>
+    <div class="hits-container">
+      <!-- Hit 1 -->
+      <div class="hit-row">
+        <div class="hit-cover">
+          <img
+            src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/06/debora-amorim-cantora-e1749139814920.jpg?w=1080&h=608&crop=1"
+            alt="Capa Toma o Teu Lugar" onerror="this.style.display='none'; this.nextSibling.style.display='flex';">
+          <div class="hit-cover-placeholder">CAPA</div>
+        </div>
+        <div class="hit-details">
+          <div class="hit-title">Toma o Teu Lugar</div>
+          <div class="hit-meta"><span>Single 2024</span><span>● Adoração</span></div>
+          <div class="hit-description">Canção que exalta a soberania de Deus e inspira uma entrega total. Gravada ao
+            vivo com participação especial.</div>
+        </div>
+        <a href="#" class="listen-link">Ouvir</a>
       </div>
-      <div class="hit-details">
-        <div class="hit-title">Toma o Teu Lugar</div>
-        <div class="hit-meta"><span>Single 2024</span><span>● Adoração</span></div>
-        <div class="hit-description">Canção que exalta a soberania de Deus e inspira uma entrega total. Gravada ao vivo com participação especial.</div>
+      <!-- Hit 2 -->
+      <div class="hit-row">
+        <div class="hit-cover">
+          <img
+            src="https://media.istockphoto.com/id/1208843679/pt/foto/caucasian-female-singer-portrait-isolated-on-purple-studio-background-in-neon-light.jpg?s=612x612&w=0&k=20&c=mYRgUc_JaoKmop3sFjEJIFPqVa_3B53HBHGuWStcItw="
+            alt="Capa A Esperança" onerror="this.style.display='none'; this.nextSibling.style.display='flex';">
+          <div class="hit-cover-placeholder">CAPA</div>
+        </div>
+        <div class="hit-details">
+          <div class="hit-title">A Esperança</div>
+          <div class="hit-meta"><span>Single 2023</span><span>● Louvor</span></div>
+          <div class="hit-description">Hino de fé que atravessou fronteiras, sendo destaque nas principais plataformas
+            de música gospel.</div>
+        </div>
+        <a href="#" class="listen-link">Ouvir</a>
       </div>
-      <a href="#" class="listen-link">Ouvir</a>
+      <!-- Hit 3 -->
+      <div class="hit-row">
+        <div class="hit-cover">
+          <img
+            src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/06/debora-amorim-cantora-e1749139814920.jpg?w=1080&h=608&crop=1"
+            alt="Capa Meu Refúgio" onerror="this.style.display='none'; this.nextSibling.style.display='flex';">
+          <div class="hit-cover-placeholder">CAPA</div>
+        </div>
+        <div class="hit-details">
+          <div class="hit-title">Meu Refúgio</div>
+          <div class="hit-meta"><span>EP 2025</span><span>● Acústico</span></div>
+          <div class="hit-description">Versão intimista que traz paz e segurança, com arranjos que tocam a alma.</div>
+        </div>
+        <a href="#" class="listen-link">Escutar</a>
+      </div>
+      <!-- Hit 4 (adicional) -->
+      <div class="hit-row">
+        <div class="hit-cover">
+          <img
+            src="https://media.istockphoto.com/id/1208843679/pt/foto/caucasian-female-singer-portrait-isolated-on-purple-studio-background-in-neon-light.jpg?s=612x612&w=0&k=20&c=mYRgUc_JaoKmop3sFjEJIFPqVa_3B53HBHGuWStcItw="
+            alt="Capa Águas Profundas" onerror="this.style.display='none'; this.nextSibling.style.display='flex';">
+          <div class="hit-cover-placeholder">CAPA</div>
+        </div>
+        <div class="hit-details">
+          <div class="hit-title">Águas Profundas</div>
+          <div class="hit-meta"><span>Single 2025</span><span>● Adoração</span></div>
+          <div class="hit-description">Lançamento mais recente, tema de campanha nacional de renovação espiritual.</div>
+        </div>
+        <a href="#" class="listen-link">Reproduzir</a>
+      </div>
     </div>
-    <!-- Hit 2 -->
-    <div class="hit-row">
-      <div class="hit-cover">
-        <img src="https://media.istockphoto.com/id/1208843679/pt/foto/caucasian-female-singer-portrait-isolated-on-purple-studio-background-in-neon-light.jpg?s=612x612&w=0&k=20&c=mYRgUc_JaoKmop3sFjEJIFPqVa_3B53HBHGuWStcItw=" alt="Capa A Esperança" onerror="this.style.display='none'; this.nextSibling.style.display='flex';">
-        <div class="hit-cover-placeholder">CAPA</div>
+  </section>
+
+  <!-- Video -->
+  <section id="video">
+    <div class="video-layout">
+
+      <div class="video-text">
+        <p class="section-label">Assistir</p>
+        <h2 class="section-title">Um pouco da minha <em>história</em></h2>
+        <div class="divider"></div>
+        <p class="video-desc">
+          Uma história de fé, superação e propósito. Assista ao clipe e deixe
+          essa mensagem tocar o seu coração.
+        </p>
+        <div class="video-meta">
+          <div class="video-info-title">Minha História</div>
+          <div class="video-info-sub">Clipe Oficial</div>
+        </div>
       </div>
-      <div class="hit-details">
-        <div class="hit-title">A Esperança</div>
-        <div class="hit-meta"><span>Single 2023</span><span>● Louvor</span></div>
-        <div class="hit-description">Hino de fé que atravessou fronteiras, sendo destaque nas principais plataformas de música gospel.</div>
+
+      <div class="video-outer">
+        <div class="video-border-deco"></div>
+        <div class="video-wrap">
+          <video class="video-player" src="./videos/historia_toda.mp4" poster="./imgs/REI_0025_(2).jpg"
+            controls preload="none"></video>
+        </div>
       </div>
-      <a href="#" class="listen-link">Ouvir</a>
+
     </div>
-    <!-- Hit 3 -->
-    <div class="hit-row">
-      <div class="hit-cover">
-        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/06/debora-amorim-cantora-e1749139814920.jpg?w=1080&h=608&crop=1" alt="Capa Meu Refúgio" onerror="this.style.display='none'; this.nextSibling.style.display='flex';">
-        <div class="hit-cover-placeholder">CAPA</div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos">
+    <p class="section-label">Depoimentos</p>
+    <h2 class="section-title">O que dizem <em>sobre mim</em></h2>
+    <div class="divider-premium"></div>
+    <div class="dep-grid">
+      <div class="dep-card">
+        <div class="dep-quote">"</div>
+        <p class="dep-text">Cindy, você é a definição de força e equilíbrio, uma mulher admirável. Conduz tudo com
+          coragem e um coração gigante.</p>
+        <div class="dep-autor">Simone</div>
       </div>
-      <div class="hit-details">
-        <div class="hit-title">Meu Refúgio</div>
-        <div class="hit-meta"><span>EP 2025</span><span>● Acústico</span></div>
-        <div class="hit-description">Versão intimista que traz paz e segurança, com arranjos que tocam a alma.</div>
+      <div class="dep-card">
+        <div class="dep-quote">"</div>
+        <p class="dep-text">Hoje a senhora não é só minha patroa, mas sim uma mãe. Obrigado por me escutar e orar por
+          mim.</p>
+        <div class="dep-autor">Rafael Guerreiro</div>
       </div>
-      <a href="#" class="listen-link">Escutar</a>
+      <div class="dep-card">
+        <div class="dep-quote">"</div>
+        <p class="dep-text">Minha irmã, parabéns pela mãe incrível que você é. Deus continue te honrando. Te admiro
+          muito.</p>
+        <div class="dep-autor">Val</div>
+      </div>
     </div>
-    <!-- Hit 4 (adicional) -->
-    <div class="hit-row">
-      <div class="hit-cover">
-        <img src="https://media.istockphoto.com/id/1208843679/pt/foto/caucasian-female-singer-portrait-isolated-on-purple-studio-background-in-neon-light.jpg?s=612x612&w=0&k=20&c=mYRgUc_JaoKmop3sFjEJIFPqVa_3B53HBHGuWStcItw=" alt="Capa Águas Profundas" onerror="this.style.display='none'; this.nextSibling.style.display='flex';">
-        <div class="hit-cover-placeholder">CAPA</div>
-      </div>
-      <div class="hit-details">
-        <div class="hit-title">Águas Profundas</div>
-        <div class="hit-meta"><span>Single 2025</span><span>● Adoração</span></div>
-        <div class="hit-description">Lançamento mais recente, tema de campanha nacional de renovação espiritual.</div>
-      </div>
-      <a href="#" class="listen-link">Reproduzir</a>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contact-section">
+    <p class="section-label">Contato</p>
+    <h2 class="section-title">Vamos <em>conversar</em></h2>
+    <div class="divider-premium divider-center"></div>
+    <p class="contact-description">Convites, palestras, apresentações musicais e parcerias. Entre em contato e faça
+      parte dessa missão.</p>
+    <a href="https://wa.me/5519974047076" target="_blank" class="btn-primary contact-cta">Fale no WhatsApp</a>
+    <div class="contact-actions">
+      <a href="https://www.instagram.com/cindytapia.oficial" target="_blank" class="social-pill">Instagram</a>
+      <a href="https://www.facebook.com/cindytapia.oficial/" target="_blank" class="social-pill">Facebook</a>
+      <a href="https://wa.me/5519974047076" target="_blank" class="social-pill">WhatsApp</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Depoimentos -->
-<section id="depoimentos">
-  <p class="section-label">Depoimentos</p>
-  <h2 class="section-title">O que dizem <em>sobre mim</em></h2>
-  <div class="divider-premium"></div>
-  <div class="dep-grid">
-    <div class="dep-card"><div class="dep-quote">"</div><p class="dep-text">Cindy, você é a definição de força e equilíbrio, uma mulher admirável. Conduz tudo com coragem e um coração gigante.</p><div class="dep-autor">Simone</div></div>
-    <div class="dep-card"><div class="dep-quote">"</div><p class="dep-text">Hoje a senhora não é só minha patroa, mas sim uma mãe. Obrigado por me escutar e orar por mim.</p><div class="dep-autor">Rafael Guerreiro</div></div>
-    <div class="dep-card"><div class="dep-quote">"</div><p class="dep-text">Minha irmã, parabéns pela mãe incrível que você é. Deus continue te honrando. Te admiro muito.</p><div class="dep-autor">Val</div></div>
-  </div>
-</section>
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-logo">
+      <img src="./Logo_Cindy-Tapi.png" alt="Cindy Tapia">
+    </div>
+    <div class="footer-copy">© 2025 Cindy Tapia · Cantora, palestrante · Todos os direitos reservados</div>
+  </footer>
 
-<!-- Contato -->
-<section id="contato" class="contact-section">
-  <p class="section-label">Contato</p>
-  <h2 class="section-title">Vamos <em>conversar</em></h2>
-  <div class="divider-premium divider-center"></div>
-  <p class="contact-description">Convites, palestras, apresentações musicais e parcerias. Entre em contato e faça parte dessa missão.</p>
-  <a href="https://wa.me/5519974047076" target="_blank" class="btn-primary contact-cta">Fale no WhatsApp</a>
-  <div class="contact-actions">
-    <a href="https://www.instagram.com/cindytapia.oficial" target="_blank" class="social-pill">Instagram</a>
-    <a href="https://www.facebook.com/cindytapia.oficial/" target="_blank" class="social-pill">Facebook</a>
-    <a href="https://wa.me/5519974047076" target="_blank" class="social-pill">WhatsApp</a>
-  </div>
-</section>
-
-<!-- Rodapé -->
-<footer>
-  <div class="footer-logo">
-    <img src="./Logo_Cindy-Tapi.png" alt="Cindy Tapia">
-  </div>
-  <div class="footer-copy">© 2025 Cindy Tapia · Cantora, palestrante · Todos os direitos reservados</div>
-</footer>
-
-<script>
-  const nav = document.getElementById('main-nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
-  });
-  // fallback visual para placeholders de imagem (caso a url não seja inserida)
-  document.querySelectorAll('.hit-cover img').forEach(img => {
-    img.addEventListener('error', function() {
-      this.style.display = 'none';
-      if(this.nextSibling && this.nextSibling.classList) this.nextSibling.style.display = 'flex';
-      else {
-        let placeholder = document.createElement('div');
-        placeholder.className = 'hit-cover-placeholder';
-        placeholder.innerText = 'CAPA';
-        placeholder.style.display = 'flex';
-        this.parentNode.appendChild(placeholder);
-      }
+  <script>
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
     });
-  });
-</script>
+    // fallback visual para placeholders de imagem (caso a url não seja inserida)
+    document.querySelectorAll('.hit-cover img').forEach(img => {
+      img.addEventListener('error', function () {
+        this.style.display = 'none';
+        if (this.nextSibling && this.nextSibling.classList) this.nextSibling.style.display = 'flex';
+        else {
+          let placeholder = document.createElement('div');
+          placeholder.className = 'hit-cover-placeholder';
+          placeholder.innerText = 'CAPA';
+          placeholder.style.display = 'flex';
+          this.parentNode.appendChild(placeholder);
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
