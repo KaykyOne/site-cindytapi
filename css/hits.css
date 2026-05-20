@@ -1,32 +1,26 @@
 /* GRID DE LOUVORES */
 .hits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
 
-.hit-card {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 16px;
-  padding: 1rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(214, 177, 126, 0.15);
+/* Desktop padrão - 3 colunas */
+@media (min-width: 1025px) {
+  .hits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.hit-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--gold);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+/* Tablet - 2 colunas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
-.hit-card iframe {
-  display: block;
-  width: 100%;
-
-}
-
-/* RESPONSIVIDADE */
+/* Celular - 1 coluna */
 @media (max-width: 768px) {
   .hits-grid {
     grid-template-columns: 1fr;
@@ -43,10 +37,23 @@
   }
 }
 
-/* Para telas médias (tablets) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .hits-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
+.hit-card {
+  height: auto;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(214, 177, 126, 0.15);
+}
+
+.hit-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hit-card iframe {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
 }
