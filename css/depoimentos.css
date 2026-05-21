@@ -1,6 +1,6 @@
 .dep-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 
@@ -26,4 +26,16 @@
 .dep-autor {
   color: var(--gold);
   margin-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .dep-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dep-grid {
+    grid-template-columns: 1fr;
+  }
 }
